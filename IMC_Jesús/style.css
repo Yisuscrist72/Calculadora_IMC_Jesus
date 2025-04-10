@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    height: 100vh;
+    display: grid;
+    grid-template:
+        "header" 4em
+        "main" 1fr
+        "footer" 3em /
+        1fr;
+    
+}
+
+header{
+    background-color: #10b14e;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+article label{
+    font-size: 1.5em;
+    color: #020202;
+    
+}
+
+article input{
+    font-size: 1.3em;
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
+article button{
+    font-size: 1.3em;
+    padding: 0.5em 2em;
+    border-radius: 5px;
+    background-color: #535353;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+article button:hover{
+    background-color: #969595;
+}
+
+#resultado {
+    font-size: 1.5em;
+    color: #020202;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    max-width: 500px; /* Establece un ancho máximo para el contenedor */
+    line-height: 1.5; /* Mejora la legibilidad del texto */
+}
+
+footer{
+    background-color: #10b14e;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8em;
+}
